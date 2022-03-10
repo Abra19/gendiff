@@ -3,12 +3,11 @@ name: lint and test
 
 # Trigger the workflow on push or pull request
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:    
-      - main
+  - push
+  - pull_request
+
+env:
+  CI: true
 
 jobs:
   build:
@@ -24,19 +23,17 @@ jobs:
       - name: Install dependencies
         run: |
           make install
-        env:
-          CI: true
       - name: Run linter
         run: | 
           make lint
       - name: Run test
         run: |
           make test
-      - name: Publish code coverage
-        uses: paambaati/codeclimate-action@v3.0.0
+      - name: Test & publish code coverage
+        uses: paambaati/codeclimate-action@v3
+         # Add Code Climate secret key
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         with:
           coverageCommand: make test-coverage
           debug: true
-      
