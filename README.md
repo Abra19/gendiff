@@ -24,3 +24,6 @@ The function can be used as a library or as a console utility
 
 [![asciicast](https://asciinema.org/a/IGOK5BtF81gDNywfZQVVLUxaY.svg)](https://asciinema.org/a/IGOK5BtF81gDNywfZQVVLUxaY)
 
+ ### YML
+
+ [![asciicast](https://asciinema.org/a/ksboO8hFlpp6bZlUkgvxPfbWh.svg)](https://asciinema.org/a/ksboO8hFlpp6bZlUkgvxPfbWh)
