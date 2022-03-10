@@ -11,12 +11,12 @@ publish:
 	npm publish --dry-run
 
 test:
-	npm run test
+	npm test
 
-test-watch: 
-	npm run test-watch
+test-watch:
+	npm test --watch-all
 
 test-coverage: 
-	npm run test -- --coverage --coverageProvider=v8
+	npm test -- --coverage --coverageProvider=v8
 
-.PHONY: gendiff
+.PHONY: gendiff test
