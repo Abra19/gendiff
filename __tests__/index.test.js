@@ -8,11 +8,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const getFixturePath = (filename) => join(__dirname, '..', '__fixtures__', filename);
 const readFile = (filename) => readFileSync(getFixturePath(filename), 'utf-8');
-const result = readFile('resultJSON.txt').trim();
+const result1 = readFile('resultJSON.txt').trim();
 
 const formats = ['.json', '.yml'];
 
 test.each(formats)('testing gendiff for %s', (format) => {
-  const actual = genDiff(getFixturePath(`file1${format}`), getFixturePath(`file2${format}`));
-  expect(actual).toBe(result);
+  const actual1 = genDiff(getFixturePath(`file1${format}`), getFixturePath(`file2${format}`, 'stylish'));
+  expect(actual1).toBe(result1);
 });
