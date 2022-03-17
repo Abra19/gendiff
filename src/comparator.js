@@ -19,10 +19,9 @@ const buildDiffTree = (obj1, obj2) => {
     if (value1 === value2) {
       return { keyName: key, type: 'unchanged', value: value1 };
     }
-    const result = {
+    return {
       keyName: key, type: 'changed', value: value1, changedValue: value2,
     };
-    return result;
   });
   return resultObj;
 };

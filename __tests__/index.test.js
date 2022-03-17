@@ -11,18 +11,21 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const getFixturePath = (filename) => join(__dirname, '..', '__fixtures__', filename);
 const readFile = (filename) => readFileSync(getFixturePath(filename), 'utf-8');
-const result = readFile('resultJSON.txt').trim();
+const result1 = readFile('resultStylish.txt').trim();
 const result2 = readFile('resultPlain.txt').trim();
+const result3 = readFile('resultJSON.txt').trim();
 
 const extensions = ['.json', '.yml', '.yaml'];
 
 test.each(extensions)('testing gendiff for %s', (extension) => {
   const actual1 = genDiff(getFixturePath(`file1${extension}`), getFixturePath(`file2${extension}`, 'stylish'));
-  expect(actual1).toBe(result);
+  expect(actual1).toBe(result1);
   const actual2 = genDiff(getFixturePath(`file1${extension}`), getFixturePath(`file2${extension}`));
-  expect(actual2).toBe(result);
+  expect(actual2).toBe(result1);
   const actual3 = genDiff(getFixturePath(`file1${extension}`), getFixturePath(`file2${extension}`), 'plain');
   expect(actual3).toBe(result2);
+  const actual4 = genDiff(getFixturePath(`file1${extension}`), getFixturePath(`file2${extension}`), 'json');
+  expect(actual4).toBe(result3);
 });
 
 test('not supported file extension', () => {

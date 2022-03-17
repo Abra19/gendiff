@@ -7,6 +7,8 @@ const formatter = (obj, format) => {
       return stylish(obj);
     case 'plain':
       return plain(obj);
+    case 'json':
+      return JSON.stringify(obj);
     default:
       throw new Error(`format ${format} is not supported`);
   }

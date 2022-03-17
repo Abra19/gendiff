@@ -18,7 +18,7 @@ The function can be used as a library or as a console utility
 3. Link: `npm link`
 
 [![asciicast](https://asciinema.org/a/UftaS3pMvoUpBoyoEFkt37AVu.svg)](https://asciinema.org/a/UftaS3pMvoUpBoyoEFkt37AVu)
-### Some examples of use as a console utility
+### Some examples of use as a console utility:
 
  ### JSON simple tree
 
@@ -33,3 +33,6 @@ The function can be used as a library or as a console utility
 
   ### format: plain
    [![asciicast](https://asciinema.org/a/rvZVoyNtKQENmluWirdK3YxTb.svg)](https://asciinema.org/a/rvZVoyNtKQENmluWirdK3YxTb)
+
+  ### format: json
+   [![asciicast](https://asciinema.org/a/oFAkhZ0b9kjd6i5r8Ff9i0EBZ.svg)](https://asciinema.org/a/oFAkhZ0b9kjd6i5r8Ff9i0EBZ)
