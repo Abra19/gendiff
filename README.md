@@ -28,5 +28,8 @@ The function can be used as a library or as a console utility
 
  [![asciicast](https://asciinema.org/a/ksboO8hFlpp6bZlUkgvxPfbWh.svg)](https://asciinema.org/a/ksboO8hFlpp6bZlUkgvxPfbWh)
 
- ### JSON 
+ ### format: stylish (default)
  [![asciicast](https://asciinema.org/a/OQMCBCiYOh8ie92xD1Q76md4Q.svg)](https://asciinema.org/a/OQMCBCiYOh8ie92xD1Q76md4Q)
+
+  ### format: plain
+   [![asciicast](https://asciinema.org/a/rvZVoyNtKQENmluWirdK3YxTb.svg)](https://asciinema.org/a/rvZVoyNtKQENmluWirdK3YxTb)
