@@ -1,5 +1,4 @@
 import _ from 'lodash';
-import formatter from './formatters/index.js';
 
 const buildDiffTree = (obj1, obj2) => {
   const keys = _.union(_.keys(obj1), _.keys(obj2));
@@ -26,9 +25,4 @@ const buildDiffTree = (obj1, obj2) => {
   return resultObj;
 };
 
-const compareObj = (obj1, obj2, format) => {
-  const resultObj = buildDiffTree(obj1, obj2);
-  return formatter(resultObj, format);
-};
-
-export default compareObj;
+export default buildDiffTree;
