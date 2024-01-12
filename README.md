@@ -13,7 +13,7 @@ The path to the file can be either relative: `../somefile` or absolute `/somedir
 The function can be used as a library or as a console utility
 ### To get started
 
-1. Clone git repo: `git clone https://github.com/Abra19/frontend-project-lvl2.git`
+1. Clone git repo: `git clone git@github.com:Abra19/gendiff.git`
 2. Install package: `make install`
 3. Link: `npm link`
 
